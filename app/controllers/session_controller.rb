@@ -17,7 +17,7 @@ class SessionController < ApplicationController
     self.current_user.forget_me if logged_in?
     cookies.delete :auth_token
     reset_session
-    flash[:notice] = "You have been logged out."
+    flash[:notice] = "Vous êtes bien déloggé."
     redirect_back_or_default('/')
   end
 
@@ -49,7 +49,7 @@ class SessionController < ApplicationController
     end
   end
 
-  def failed_login(message = "Authentication failed.")
+  def failed_login(message = "Echec à l'authentification.")
     flash.now[:error] = message
     render :action => 'new'
   end
@@ -60,7 +60,7 @@ class SessionController < ApplicationController
       cookies[:auth_token] = { :value => self.current_user.remember_token , :expires => 1.year.from_now }
     end
     redirect_back_or_default('/')
-    flash[:notice] = "Logged in successfully"
+    flash[:notice] = "Vous êtes loggé."
   end
 
 end

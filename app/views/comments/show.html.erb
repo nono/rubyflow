@@ -1,18 +1,18 @@
 <p>
-  <b>Content:</b>
+  <b>Contenu :</b>
   <%=h @comment.content %>
 </p>
 
 <p>
-  <b>Byline:</b>
+  <b>Légende :</b>
   <%=h @comment.byline %>
 </p>
 
 <p>
-  <b>User:</b>
+  <b>Utilisateur :</b>
   <%=h @comment.user.login %>
 </p>
 
 
-<%= link_to 'Edit', edit_comment_path(@comment) %> |
-<%= link_to 'Back', comments_path %>
+<%= link_to 'Modifier', edit_comment_path(@comment) %> |
+<%= link_to 'Retour', comments_path %>

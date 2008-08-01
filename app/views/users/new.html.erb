@@ -1,27 +1,27 @@
-<h2>Join The Flow!</h2>
+<h2>Rejoignez Rubyflow.fr !</h2>
 
 <%= error_messages_for :user %>
 
-<p><em>Sorry. Keeping it real bare bones for the moment, so no OpenID yet!</em></p>
+<p><em>Désolé, l'authentification par OpenID n'est pas encore disponible.</em></p>
 
 <% form_for :user, :url => users_path do |f| -%>
-<p><label for="login">Username (all alphanumerics and underscores, no spaces)</label><br/>
+<p><label for="login">Login (caractères alphanumériques et underscores uniquement, pas d'espaces)</label><br/>
 <%= f.text_field :login %></p>
 
-<p><small>Usernames are case sensitive, but you're welcome to use mixed case and underscores as necessary (e.g. BobSmith Fred_Turner bert1974)</small></p>
+<p><small>Les logins sont sensibles à la casse, utilisez ceci à bon escient (exemples de logins valides : BobSmith Fred_Turner bert1974)</small></p>
 
-<p><label for="url">URL / Your Web Site (start with http://)</label><br/>
+<p><label for="url">URL / Votre site Web (en commençant par http://)</label><br/>
 <%= f.text_field :url %></p>
 
-<p><small>Note that this URL is linked from your username in various places around the site.</small></p>
+<p><small>Cette URL sera lié à votre login à plusieurs endroits sur le site.</small></p>
 
-<p><label for="password">Password</label><br/>
+<p><label for="password">Mot de passe</label><br/>
 <%= f.password_field :password %></p>
 
-<p><label for="password_confirmation">Confirm Password</label><br/>
+<p><label for="password_confirmation">Confirmer le mot de passe</label><br/>
 <%= f.password_field :password_confirmation %></p>
 
 <%= render :partial => 'home/signup_captcha' %>
 
-<p><%= submit_tag 'Sign up' %></p>
+<p><%= submit_tag 'Créer le compte' %></p>
 <% end -%>

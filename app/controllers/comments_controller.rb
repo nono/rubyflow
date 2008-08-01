@@ -22,7 +22,7 @@ class CommentsController < ApplicationController
       @comment.content = @comment.content.gsub(/((<a\s+.*?href.+?\".*?\")([^\>]*?)>)/, '\2 rel="nofollow" \3>')
       unless Digest::SHA1.hexdigest(params[:captcha].upcase.chomp)[0..5] == params[:captcha_guide]
         @item.errors.add("Word")
-        flash.now[:notice] = "Your comment could not be posted. Scroll down, correct, and retry. Did you get the CAPTCHA right?"
+        flash.now[:notice] = "Votre commentaire ne peut être posté. Veuillez réessayer en faisant attention au Captcha."
         render :template => 'items/show'
         return
       end
@@ -31,11 +31,11 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       if @comment.save
-        flash[:notice] = 'Comment was successfully created.'
+        flash[:notice] = 'Commentaire créé.'
         format.html { redirect_to(@comment.item) }
         format.xml  { render :xml => @comment, :status => :created, :location => @comment }
       else
-        flash.now[:notice] = "Your comment could not be posted. Scroll down, correct, and retry."
+        flash.now[:notice] = "Votre commentaire ne peut être poster. Veuillez corriger et réessayer."
         format.html { render :template => 'items/show' }
         format.xml  { render :xml => @comment.errors, :status => :unprocessable_entity }
       end
@@ -49,7 +49,7 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       if @comment.update_attributes(params[:comment])
-        flash[:notice] = 'Comment was successfully updated.'
+        flash[:notice] = 'Commentaire mis à jour'
         format.html { redirect_to(@comment) }
         format.xml  { head :ok }
       else

@@ -88,7 +88,7 @@ class ItemsController < ApplicationController
 
     respond_to do |format|
       if @item.save
-        flash[:notice] = 'Item was successfully posted.'
+        flash[:notice] = 'Merci de votre contribution.'
         format.html { redirect_to(@item) }
         format.xml  { render :xml => @item, :status => :created, :location => @item }
       else
@@ -105,7 +105,7 @@ class ItemsController < ApplicationController
 
     respond_to do |format|
       if @item.update_attributes(params[:item])
-        flash[:notice] = 'Item was successfully updated.'
+        flash[:notice] = 'Mise à jour effectuée.'
         format.html { redirect_to(@item) }
         format.xml  { head :ok }
       else

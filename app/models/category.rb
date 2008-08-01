@@ -4,7 +4,7 @@ class Category < ActiveRecord::Base
   validates_presence_of     :title, :parent_id
   validates_length_of       :title, :within => 4..255
   validates_uniqueness_of   :name, :if => :name?
-  validates_format_of       :name, :with => /^[\w\-\_]+$/, :if => :name?, :message => 'is invalid (alphanumerics, hyphens and underscores only)'
+  validates_format_of       :name, :with => /^[\w\-\_]+$/, :if => :name?, :message => "n'est pas valide (caractères alphanumériques, tiret et underscore uniquement)'"
   validates_length_of       :name, :within => 4..255, :if => :name?
   
   def to_param

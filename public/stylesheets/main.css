@@ -342,19 +342,13 @@ H1 A { color: #c00; }
 
 /* @group Sites */
 
-BODY.rubyflow #header { border-bottom-color: #c00; }
-BODY.pythonflow #header { border-bottom-color: #490; }
-BODY.rubyflow #header H1 A { color: #c00; }
-BODY.pythonflow #header H1 A { color: #490; }
-BODY.rubyflow .rubyred { color: #c00; }
-BODY.pythonflow .rubyred { color: #490; }
+BODY.rubyflowfr #header { border-bottom-color: #c00; }
+BODY.rubyflowfr #header H1 A { color: #c00; }
+BODY.rubyflowfr .rubyred { color: #c00; }
 
-BODY.rubyflow A { color: #2266bb; }
-BODY.rubyflow A:hover { color: #ff0000; }
-BODY.rubyflow .entry A:visited { text-decoration: none; }
-BODY.pythonflow A { color: #2266bb; }
-BODY.pythonflow A:hover { color: #009900; }
-BODY.pythonflow .entry A:visited { text-decoration: none; }
+BODY.rubyflowfr A { color: #2266bb; }
+BODY.rubyflowfr A:hover { color: #ff0000; }
+BODY.rubyflowfr .entry A:visited { text-decoration: none; }
 
 
 /* @end */

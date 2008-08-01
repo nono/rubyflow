@@ -1,10 +1,10 @@
-<h1>Editing item</h1>
+<h1>Modifier un item</h1>
 
 <%= error_messages_for :item %>
 
 <% form_for(@item) do |f| %>
   <p>
-    <b>Title</b><br />
+    <b>Titre</b><br />
     <%= f.text_field :title %>
   </p>
 
@@ -14,7 +14,7 @@
   </p>
 
   <p>
-    <b>Content</b><br />
+    <b>Contenu</b><br />
     <%= f.text_area :content %>
   </p>
 
@@ -24,9 +24,9 @@
   </p>
 
   <p>
-    <%= f.submit "Update" %>
+    <%= f.submit "Mettre à jour" %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @item %> |
-<%= link_to 'Back', items_path %>
+<%= link_to 'Afficher', @item %> |
+<%= link_to 'Retour', items_path %>

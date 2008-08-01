@@ -19,12 +19,14 @@
   	<div id="header">
   		<h1><a href="/" class="home"><%= APP_CONFIG[:app_title] %></a></h1>
   		<div id="stuff">
-  		  <%= link_to 'Home', root_url %> | <a href="<%= APP_CONFIG[:rss_url] %>">RSS Feed</a> | 
-  		  <%= link_to 'Post Item', new_item_path, :class => 'rubyred' %> |
+          <%= link_to 'Accueil', root_url %> |
+          <a href="<%= APP_CONFIG[:rss_url] %>">Fil RSS</a> | 
+  		  <%= link_to 'Poster un item', new_item_path, :class => 'rubyred' %> |
   		  <% if logged_in? %>
-  		    <%= link_to 'Log Out', logout_url %>
+  		    <%= link_to 'Se délogger', logout_url %>
   		  <% else %>
-  			  <%= link_to 'Sign Up', signup_url %> | <%= link_to 'Log In', login_url %>
+            <%= link_to 'Créer un compte', signup_url %> |
+            <%= link_to 'Se logger', login_url %>
   			<% end %>
   		</div>
   	</div>
@@ -42,14 +44,5 @@
 			<div class="float"></div><div class="floatcontainer"><div class="float"></div></div>
 			
 		</div>
-	<script type="text/javascript">
-  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-  </script>
-  <script type="text/javascript">
-  var pageTracker = _gat._getTracker("<%= APP_CONFIG[:ga] %>");
-  pageTracker._initData();
-  pageTracker._trackPageview();
-  </script>
 	</body>
 </html>

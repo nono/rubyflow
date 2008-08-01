@@ -8,10 +8,10 @@ class Item < ActiveRecord::Base
   
   validates_length_of       :title, :within => 4..255
   validates_uniqueness_of   :name, :if => :name?
-  validates_format_of       :name, :with => /^[\w\-\_]+$/, :if => :name?, :message => 'is invalid (alphanumerics, hyphens and underscores only)'
+  validates_format_of       :name, :with => /^[\w\-\_]+$/, :if => :name?, :message => "n'est pas valide (caractères alphanumériques, tiret et underscore uniquement)'"
   validates_length_of       :name, :within => 4..255, :if => :name?
   validates_length_of       :content, :within => 25..1200
-  validates_format_of       :tags, :with => /^[\s\w\-\_\:]+$/, :if => :tags?, :message => 'are invalid (alphanumerics, hyphens and underscores only)'
+  validates_format_of       :tags, :with => /^[\s\w\-\_\:]+$/, :if => :tags?, :message => "ne sont pas valides (caractères alphanumériques, tiret et underscore uniquement)'"
   
   def to_param
     self[:name] && self[:name].length > 3 ? self[:name] : self[:id]

@@ -1,10 +1,10 @@
-<h1>Listing comments</h1>
+<h1>Listing des commentaires</h1>
 
 <table>
   <tr>
-    <th>Content</th>
-    <th>Byline</th>
-    <th>User</th>
+    <th>Contenu</th>
+    <th>Légende</th>
+    <th>Utilisateur</th>
   </tr>
 
 <% for comment in @comments %>
@@ -12,13 +12,13 @@
     <td><%=h comment.content %></td>
     <td><%=h comment.byline %></td>
     <td><%=h comment.user %></td>
-    <td><%= link_to 'Show', comment %></td>
-    <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
-    <td><%= link_to 'Destroy', comment, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Afficher', comment %></td>
+    <td><%= link_to 'Modifier', edit_comment_path(comment) %></td>
+    <td><%= link_to 'Supprimer', comment, :confirm => 'Etes-vous sûr de vouloir le supprimer ?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New comment', new_comment_path %>
+<%= link_to 'Nouveau commentaire', new_comment_path %>

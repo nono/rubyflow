@@ -1,27 +1,27 @@
-<h1>Editing comment</h1>
+<h1>Editer un commentaire</h1>
 
 <%= error_messages_for :comment %>
 
 <% form_for(@comment) do |f| %>
   <p>
-    <b>Content</b><br />
+    <b>Contenu</b><br />
     <%= f.text_area :content %>
   </p>
 
   <p>
-    <b>Byline</b><br />
+    <b>Légende</b><br />
     <%= f.text_field :byline %>
   </p>
 
   <p>
-    <b>User</b><br />
+    <b>Utilisateur</b><br />
     <%= f.text_field :user %>
   </p>
 
   <p>
-    <%= f.submit "Update" %>
+    <%= f.submit "Mettre à jour" %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @comment %> |
-<%= link_to 'Back', comments_path %>
+<%= link_to 'Afficher', @comment %> |
+<%= link_to 'Retour', comments_path %>
