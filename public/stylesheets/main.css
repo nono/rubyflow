@@ -342,13 +342,45 @@ H1 A { color: #c00; }
 
 /* @group Sites */
 
-BODY.rubyflowfr #header { border-bottom-color: #c00; }
-BODY.rubyflowfr #header H1 A { color: #c00; }
 BODY.rubyflowfr .rubyred { color: #c00; }
 
 BODY.rubyflowfr A { color: #2266bb; }
 BODY.rubyflowfr A:hover { color: #ff0000; }
 BODY.rubyflowfr .entry A:visited { text-decoration: none; }
 
+BODY.rubyflowfr #header {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	border: none;
+	background: none;
+	z-index: 1;
+}
+
+BODY.rubyflowfr #header H1 A {
+	display: block;
+	text-indent: -9999em;
+	overflow: hidden;
+	background: url(/images/logo.png) no-repeat;
+	width: 220px;
+	height: 65px;
+	position: absolute;
+	right: 10px;
+	bottom: 1px;
+}
+
+BODY.rubyflowfr #header #stuff {
+	background: #c00;
+	color: #fff;
+	padding: 10px 5px;
+}
+
+BODY.rubyflowfr #header #stuff A {
+	color: #fff;
+}
+
+BODY.rubyflowfr #sidebar, BODY.rubyflowfr #page {
+	padding-bottom: 60px;
+}
 
 /* @end */
