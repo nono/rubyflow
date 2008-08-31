@@ -1,9 +1,9 @@
 app_name: rubyflow.fr
-app_title: "RubyFlow Fr"
-default_title: "RubyFlow : soyez toujours au courant de l'actualité Ruby"
+app_title: "RubyFlowFr"
+default_title: "RubyFlowFr : soyez toujours au courant de l'actualité Ruby"
 sub_title: "L'actualité de la communauté Ruby francophone"
-app_url: http://rubyflow.menfin.info/
-rss_url: http://rubyflow.menfin.info/items.rss
+app_url: http://flow.rubyfrance.org/
+rss_url: http://feeds.feedburner.com/RubyflowFr
 meta_keywords: "ruby, ruby news, ruby blog, rails, rubyonrails, merb"
 meta_author: "Bruno Michel"
 body_class: rubyflowfr
@@ -16,5 +16,5 @@ sidebar: |-
   <div id="who"><h3>Qui ?</h3>
   <p>A l'origine, <a href="http://www.rubyflow.com">RubyFlow</a> est un site développé par <a href="http://peterc.org">Peter Cooper</a> (<a href="http://rubyinside.com">Ruby Inside</a>, c'est aussi de lui). <a href="http://blog.menfin.info">Bruno Michel</a> l'a traduit en français. <a href="http://www.bearstech.com">Bearstech</a> l'héberge gracieusement. Mais en définitive, c'est la communauté qui fait vivre ce site.</p>
   <p><em>Note : RubyFlow est une application sous licence libre. Son développement se passe sur <a href="http://github.com/nono/rubyflow/tree/master">Github</a>.</em></p>
-  <p><a href="http://feeds.feedburner.com/Rubyflow"><img src="http://feeds.feedburner.com/~fc/Rubyflow?bg=cc0000&amp;fg=FFFFFF&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a></p>
+  <p><a href="http://feeds.feedburner.com/RubyflowFr"><img src="http://feeds.feedburner.com/~fc/RubyflowFr?bg=cc0000&amp;fg=FFFFFF&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a></p>
   <p><a href="http://www.bearstech.com/"><img src="/images/bearstech_80x15_2.png" alt="Powered by Bearstech" /></a></p></div>
