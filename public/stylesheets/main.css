@@ -115,13 +115,11 @@ A.home {
 
 #content {
   padding-left: 0px;
-  padding-right: 220px;
   margin-top: 18px;
   /* float: left; */
 }
 
 .post {
-	padding-left: 2em;
 	margin-bottom: 1.4em;
 }
 
@@ -133,7 +131,7 @@ BODY.inner .entry {
   line-height: 1.6em;
 }
 
-#header {
+/*#header {
   margin-top: 0px;
   height: 36px;
   background-color: #eee;
@@ -154,28 +152,30 @@ BODY.inner .entry {
   position: absolute;
   top: 1px;
   left:  18px;
-}
+}*/
 
 #sidebar {
-  position: absolute;
+/*  position: absolute;
   width: 220px;
   right: 10px;
   top: 0px;
-  padding: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;*/
   font-size: 0.9em;
   line-height: 1.5em;
 }
 
 #page {
   position: relative;
-  margin: 0px 20px;
+  margin: 0px auto;
+	width: 600px;
+	padding: 10px;
 }
 
 BLOCKQUOTE {
   background-color: #def;
   padding: 10px;
   margin: 2em 1em;
-  position: relative;  
+  position: relative;
 }
 
 CODE {
@@ -258,7 +258,7 @@ blockquote cite {
 #comments {
   /* border-top: 4px solid #ccc; */
   margin-top: 18px;
-  padding-left: 2em;
+
 }
 
 #comments H3 {
@@ -379,8 +379,18 @@ BODY.rubyflowfr #header #stuff A {
 	color: #fff;
 }
 
-BODY.rubyflowfr #sidebar, BODY.rubyflowfr #page {
-	padding-bottom: 60px;
+BODY.rubyflowfr #page {
+	padding-bottom: 20px;
+}
+
+BODY.rubyflowfr #sidebar {
+	border-top: 1px solid #ddd;
+}
+
+BODY.rubyflowfr #sidebar div {
+	float:left;
+	margin-right:10px;
+	width: 190px;
 }
 
 /* @end */
