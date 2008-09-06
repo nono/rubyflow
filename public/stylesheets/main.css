@@ -47,65 +47,69 @@ caption, th, td {
 body {
   margin: 0px 0px 20px 0px;
   text-align: left;
-  font: normal 14px Arial, sans-serif;
+  font: normal 14px arial, sans-serif;
   line-height: 1.5em;
   color: #111;
   background-color: #fff;
 }
 
-H1, H2, H3, H4 {
-  font-family: Helvetica, Arial, sans-serif;
+h1, h2, h3, h4 {
+  font-family: Helvetica, arial, sans-serif;
   font-weight: bold;
   margin: 8px 0px 14px 0px;
 }
 
-H1 { font-size: 2.2em; }
-H2 { font-size: 1.9em; line-height: 1.35em; margin-top: 20px; margin-bottom: 0px;}
-H3 { font-size: 1.2em; }
-H4 { font-size: 1.0em; }
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.9em; line-height: 1.35em; margin-top: 20px; margin-bottom: 0px;}
+h3 { font-size: 1.2em; }
+h4 { font-size: 1.0em; }
 
-BODY.homepage .post H2 {
+body.homepage .post h2 {
   margin-bottom: 0px;
   font-size: 1.6em;
 }
 
-A {
+a {
   color: #2266bb;
 }
 
-A:hover {
+a:hover {
   color: #ff0000;
 }
 
-P {
+p {
   margin: 16px 0px;
 }
 
-UL, OL {
+ul, ol {
   padding-left: 1.9em;
 }
 
-UL {
+ul {
     list-style-type: disc;
 }
 
-OL {
+ol {
     list-style-type: decimal;
 }
 
-LI {
+li {
   list-style-position: outside;
 }
 
-STRONG { font-weight: bold; }
+strong {
+  font-weight: bold;
+}
 
-SMALL {
+small {
    font-size: 0.8em;
 }
 
-EM { font-style: italic; }
+em {
+  font-style: italic;
+}
 
-A.home {
+a.home {
   text-decoration: none;
 }
 
@@ -123,43 +127,16 @@ A.home {
 	margin-bottom: 1.4em;
 }
 
-.post A {
+.post a {
   font-weight: bold;
 }
 
-BODY.inner .entry {
+.entry {
   line-height: 1.6em;
+  margin: 0;
 }
-
-/*#header {
-  margin-top: 0px;
-  height: 36px;
-  background-color: #eee;
-  border-bottom: 14px solid #c00;
-  margin-bottom: 12px;
-}
-
-#header #stuff {
-  position: absolute;
-  top: 8px;
-  right: 20px;
-}
-
-#header H1 {
-  color: #c00;
-  font-size: 32px;
-  letter-spacing: -1px;
-  position: absolute;
-  top: 1px;
-  left:  18px;
-}*/
 
 #sidebar {
-/*  position: absolute;
-  width: 220px;
-  right: 10px;
-  top: 0px;
-  padding: 0px 0px 0px 0px;*/
   font-size: 0.9em;
   line-height: 1.5em;
 }
@@ -170,14 +147,14 @@ BODY.inner .entry {
 	width: 600px;
 }
 
-BLOCKQUOTE {
+blockquote {
   background-color: #def;
   padding: 10px;
   margin: 2em 1em;
   position: relative;
 }
 
-CODE {
+code {
 	font-family: "Liberation Mono", Monaco, "Courier New", monospace;
 	font-size: 13px;
 }
@@ -188,7 +165,7 @@ CODE {
   font-size: 16px;
 }
 
-BODY.inner .date {
+body.inner .date {
   font-size: 14px;
   color: #999;
 }
@@ -205,7 +182,7 @@ BODY.inner .date {
 	float: right;
 }
 
-.leftright A {
+.leftright a {
   color: #888;
   font-family: verdana;
   font-size: 12px;
@@ -247,12 +224,10 @@ blockquote cite {
   line-height: 17px;  
 }
 
-#content .metadata, BLOCKQUOTE CITE {
+#content .metadata, blockquote cite {
   font-size: 11px;
   font-family: verdana, arial, sans-serif; 
 }
-
-
 
 #comments {
   /* border-top: 4px solid #ccc; */
@@ -260,16 +235,16 @@ blockquote cite {
 
 }
 
-#comments H3 {
+#comments h3 {
   color: #44689b;
   margin-top: 0.8em;
 }
 
-#comments A:hover {
+#comments a:hover {
   color: #ff0000;
 }
 
-#content .metadata A, BLOCKQUOTE CITE A {
+#content .metadata a, blockquote cite a {
   color: #888;
 }
 
@@ -277,14 +252,14 @@ blockquote cite {
 
 
 /* @group Fixes */
-.floatcontainer:after{
+.floatcontainer:after {
     content: "."; 
     display: block; 
     height: 0; 
     font-size:0;	
     clear: both; 
     visibility:hidden;
-    }
+}
 	
 .floatcontainer { display: inline-block; clear: both;}
 .float { clear: both; }
@@ -297,7 +272,7 @@ blockquote cite {
 
 /* @group Misc */
 
-P.message {
+p.message {
   background-color: #eee;
   padding: 8px;
   border: 1px solid #999;
@@ -309,11 +284,11 @@ P.message {
   color: #c00;
 }
 
-#comments TEXTAREA {
+#comments textarea {
 width: 500px; height: 220px;
 }
 
-#captcha_display SUP {
+#captcha_display sup {
    display: none;
 }
 
@@ -335,19 +310,19 @@ width: 500px; height: 220px;
   letter-spacing: 5px;
 }
 
-H1 A { color: #c00; }
+h1 a { color: #c00; }
 
 /* @end */
 
 /* @group Sites */
 
-BODY.rubyflowfr .rubyred { color: #c00; }
+body.rubyflowfr .rubyred { color: #c00; }
 
-BODY.rubyflowfr A { color: #2266bb; }
-BODY.rubyflowfr A:hover { color: #ff0000; }
-BODY.rubyflowfr .entry A:visited { text-decoration: none; }
+body.rubyflowfr a { color: #2266bb; }
+body.rubyflowfr a:hover { color: #ff0000; }
+body.rubyflowfr .entry a:visited { text-decoration: none; }
 
-BODY.rubyflowfr #header {
+body.rubyflowfr #header {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -356,7 +331,7 @@ BODY.rubyflowfr #header {
 	z-index: 1;
 }
 
-BODY.rubyflowfr #header H1 A {
+body.rubyflowfr #header h1 a {
 	display: block;
 	text-indent: -9999em;
 	overflow: hidden;
@@ -368,25 +343,25 @@ BODY.rubyflowfr #header H1 A {
 	bottom: 1px;
 }
 
-BODY.rubyflowfr #header #stuff {
+body.rubyflowfr #header #stuff {
 	background: #c00;
 	color: #fff;
 	padding: 10px 5px;
 }
 
-BODY.rubyflowfr #header #stuff A {
+body.rubyflowfr #header #stuff a {
 	color: #fff;
 }
 
-BODY.rubyflowfr #page {
+body.rubyflowfr #page {
 	padding-bottom: 20px;
 }
 
-BODY.rubyflowfr #sidebar {
+body.rubyflowfr #sidebar {
 	border-top: 1px solid #ddd;
 }
 
-BODY.rubyflowfr #sidebar div {
+body.rubyflowfr #sidebar div {
 	float:left;
 	margin-right:10px;
 	width: 190px;
