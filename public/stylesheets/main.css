@@ -124,7 +124,7 @@ a.home {
 }
 
 .post {
-	margin-bottom: 1.4em;
+	margin-bottom: 2.5em;
 }
 
 .post a {
@@ -132,7 +132,7 @@ a.home {
 }
 
 .entry {
-  line-height: 1.6em;
+  line-height: 1.5em;
   margin: 0;
 }
 
@@ -217,14 +217,17 @@ blockquote cite {
 /* @group Content */
 
 #content .metadata {
+  float: right;
   color: #999;
-  margin: 0px; margin-top: 0px;
-  border-top: 0px solid #ccc;
+  margin: 0px;
   padding-bottom: 0px;
   line-height: 17px;  
+  font-style: italic;
+  font-size: 12px;
+  font-family: verdana, arial, sans-serif; 
 }
 
-#content .metadata, blockquote cite {
+blockquote cite {
   font-size: 11px;
   font-family: verdana, arial, sans-serif; 
 }
@@ -244,7 +247,11 @@ blockquote cite {
   color: #ff0000;
 }
 
-#content .metadata a, blockquote cite a {
+#content .metadata a {
+  color: #71a3cc;
+}
+
+blockquote cite a {
   color: #888;
 }
 
