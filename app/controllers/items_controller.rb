@@ -74,7 +74,7 @@ class ItemsController < ApplicationController
       end
     end
     
-    if @item.title.empty?
+    if @item.title.blank?
       @item.title = @item.content.gsub(/\<[^\>]+\>/, '')[0...40] + "..."
     end
     
