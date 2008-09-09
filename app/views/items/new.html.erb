@@ -17,7 +17,7 @@
   <p><%= f.text_field :byline %>
   <label for="byline"> <small>Votre nom /pseudo (obligatoire)</small></label></p>
 <% end %>
-<!--<p><%= f.text_field :title %> <label for="title"><small>Titre (utilisé principalement pour les archives)</small></label></p>-->
+<p><%= f.text_field :title %> <label for="title"><small>Titre (facultatif, utilisé principalement pour le flux RSS)</small></label></p>
 <p style="font-size: 13px; background-color: #ffc; padding: 4px 16px; border-left: 3px solid #999; font-family: verdana; line-height: 15px; letter-spacing: 0px"><strong>Si vous le souhaitez, vous pouvez utiliser les balises HTML suivantes : </strong><br /><code>&lt;a href=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote&gt; &lt;code&gt; &lt;em&gt; &lt;i&gt; &lt;strong&gt;</code><br /><br /><em>Oui, vous <b>devez utilisez du bon vieux HTML</b> et non du Textile ou du Markdown pour le moment.</em></small></p>
 <p><%= f.text_area :content, :cols => 60, :rows => 8 %></p>
 <%= render :partial => 'home/signup_captcha' unless logged_in? %>

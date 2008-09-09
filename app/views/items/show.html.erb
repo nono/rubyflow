@@ -1,5 +1,5 @@
 <div class="post">
-  <!--<h2><%=h @item.title %></h2>-->
+    <h2><%=h @item.title %></h2>
 	<h3 class="date"><%= @item.created_at.strftime("%d %B %Y") %></h3>
 	<p class="entry"><%= safe(@item.content) %></p>
 	<p class="metadata">Posté par <%= @item.user ? %Q{<a href="#{@item.user.url}">#{@item.user.login}</a>} : @item.byline %> à <%= @item.created_at.strftime("%R") %> - <a href="<%= url_for item_url(@item) %>"><%= pluralize @item.comments.size, 'commentaire' %></a> <%= link_to 'Modifier', edit_item_path(@item) if admin? %> <%= link_to 'Supprimer', @item, :confirm => 'Etes-vous sûr de vouloir supprimer cet item ?', :method => :delete if admin? %></p>
